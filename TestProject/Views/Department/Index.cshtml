@@ -1,0 +1,22 @@
+﻿@using TestProject.Models
+@model IEnumerable<Department>
+
+<div class="row">
+	<div class="col-md-10 offset-md-2">
+		<table class="table">
+			<tr>
+				<th>Name</th>
+				<th>Location</th>
+				<th>Employee</th>
+				<th>操作</th>
+			</tr>
+			@Html.DisplayForModel()
+		</table>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4 offset-md-2">
+		<a asp-action="Add">Add</a>		@* 添加按钮,点击之后会触发Department.Add() *@
+
+	</div>
+</div>
